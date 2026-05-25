@@ -1,0 +1,392 @@
+aid: pasqal
+name: Pasqal
+url: https://raw.githubusercontent.com/api-evangelist/pasqal/refs/heads/main/apis.yml
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+type: Provider
+position: Provider
+access: 3rd-Party
+kind: contract
+tags:
+  - Quantum Computing
+  - Neutral Atom
+  - Quantum
+  - QPU
+  - Rydberg
+  - Pulse-Level Control
+  - Analog Quantum
+  - Digital Quantum
+  - HPC
+  - Optimization
+  - Quantum Machine Learning
+  - Quantum Simulation
+  - France
+description: >-
+  Pasqal is a French neutral-atom quantum computing company headquartered in
+  Palaiseau, France and co-founded in 2019 by 2022 Physics Nobel Laureate
+  Alain Aspect. Pasqal builds commercial-grade neutral-atom quantum
+  processors (the Fresnel QPU family) that use arrays of laser-trapped Rydberg
+  atoms to run both analog and digital quantum programs, and packages them as
+  on-premise systems and as Pasqal Cloud Services — a pay-as-you-go quantum
+  computing platform also distributed through Google Cloud, Microsoft Azure
+  Quantum, OVHcloud, and AWS partners. The developer surface is anchored by
+  Pulser, the open-source (Apache-2.0) Python library for pulse-level/analog
+  programming of neutral-atom devices, the pasqal-cloud Python SDK for
+  submitting Pulser sequences and workloads to QPUs and emulators, and the
+  Pasqal Cloud Services REST API (with Auth0-based authentication and v1/v2
+  endpoints for batches, jobs, devices, workloads, projects, members, billing,
+  and OVH integrations). The broader ecosystem includes Qadence
+  (digital-analog programming), Pulser Studio (no-code visual programming),
+  the EMU-MPS and EMU-SV GPU-accelerated emulators, and quantum application
+  libraries — QEK (Quantum Evolution Kernel for graph ML), QUBO-Solver,
+  Maximum-Independent-Set, and QoolQit (Rydberg analog algorithm
+  development). Pasqal serves 35+ commercial engagements across energy,
+  finance, logistics, automotive, and pharma — including BMW, Thales,
+  Capgemini, Sumitomo, Aramco, CMA CGM, and KAIST — and partners with NVIDIA
+  (CUDA-Q), IBM, Google, and Microsoft. In May 2026 Pasqal demonstrated logical
+  qubits outperforming physical qubits on differential equations, and in
+  March 2026 announced 340M+ euros of new financing ahead of going public via
+  business combination with Bleichroeder Acquisition Corp II.
+apis:
+  - aid: pasqal:pasqal-cloud-services-api
+    name: Pasqal Cloud Services API
+    tags:
+      - Batches
+      - Jobs
+      - Workloads
+      - Devices
+      - Quantum Computing
+    humanURL: https://docs.pasqal.com/cloud/
+    properties:
+      - url: https://docs.pasqal.com/cloud/
+        type: Documentation
+      - url: https://docs.pasqal.com/cloud/api/
+        type: APIReference
+      - url: https://portal.pasqal.cloud/
+        type: Portal
+      - url: https://github.com/pasqal-io/pasqal-cloud
+        type: SDK
+        name: pasqal-cloud Python SDK
+      - url: https://docs.pasqal.com/cloud/usage/authentication/
+        type: Authentication
+    description: >-
+      REST API for Pasqal Cloud Services — submit and manage quantum
+      Batches and Jobs on Pasqal Fresnel QPUs and on emulator backends
+      (EMU-FREE, EMU-TN, EMU-MPS, EMU-SV), query Devices and Device
+      Specifications, run custom Workloads, and manage Projects, Members,
+      Contracts, Credit Pools, and Monthly Credit Consumption. Endpoints are
+      organized under /api/v1 and /api/v2 (batches, jobs, devices,
+      workloads, projects, billing). Authentication is Auth0-based with
+      username/password, token-provider, and Auth0TokenProvider flows.
+  - aid: pasqal:pulser-sdk
+    name: Pulser SDK
+    tags:
+      - Pulse-Level Control
+      - Analog Quantum
+      - Neutral Atom
+      - SDK
+      - Open Source
+    humanURL: https://pulser.readthedocs.io
+    properties:
+      - url: https://pulser.readthedocs.io
+        type: Documentation
+      - url: https://github.com/pasqal-io/Pulser
+        type: GitHubRepository
+      - url: https://pypi.org/project/pulser/
+        type: PackageRegistry
+      - url: https://github.com/pasqal-io/Pulser/blob/develop/LICENSE
+        type: License
+    description: >-
+      Pulser is Pasqal's open-source (Apache-2.0) Python framework for
+      composing, simulating, and executing pulse sequences on neutral-atom
+      quantum devices. It supports both digital quantum computing and
+      analog quantum simulation with pulse-level control, ships with
+      pulser_simulation (QuTiP-based emulation), and integrates with the
+      pasqal-cloud SDK via pulser-pasqal for submission to Pasqal Cloud
+      Services. Current release v1.8.0 (May 2026).
+  - aid: pasqal:qadence-sdk
+    name: Qadence SDK
+    tags:
+      - Digital Analog
+      - Variational Algorithms
+      - Quantum Machine Learning
+      - SDK
+      - Open Source
+    humanURL: https://pasqal-io.github.io/qadence/
+    properties:
+      - url: https://pasqal-io.github.io/qadence/
+        type: Documentation
+      - url: https://github.com/pasqal-io/qadence
+        type: GitHubRepository
+      - url: https://pypi.org/project/qadence/
+        type: PackageRegistry
+    description: >-
+      Qadence is Pasqal's higher-level digital-analog quantum programming
+      interface for writing variational quantum programs with tunable qubit
+      interactions, designed for neutral-atom hardware. The Qadence ecosystem
+      includes qadence-libs (QUBO/graph embedding/QML extensions),
+      qadence-protocols (error mitigation), qadence2-core / -ir / -expressions
+      / -platforms (next-generation IR and backends), pyqtorch (PyTorch state
+      vector simulator), and horqrux (JAX simulator).
+  - aid: pasqal:quantum-evolution-kernel
+    name: Quantum Evolution Kernel (QEK)
+    tags:
+      - Graph Machine Learning
+      - Quantum Machine Learning
+      - Library
+      - Open Source
+    humanURL: https://github.com/pasqal-io/quantum-evolution-kernel
+    properties:
+      - url: https://github.com/pasqal-io/quantum-evolution-kernel
+        type: GitHubRepository
+    description: >-
+      QEK is Pasqal's open-source graph machine learning library that uses
+      quantum-driven similarity metrics derived from neutral-atom dynamics
+      to build graph kernels for classification and regression on graph data.
+  - aid: pasqal:qubo-solver
+    name: QUBO Solver
+    tags:
+      - Optimization
+      - QUBO
+      - Library
+      - Open Source
+    humanURL: https://github.com/pasqal-io/qubo-solver
+    properties:
+      - url: https://github.com/pasqal-io/qubo-solver
+        type: GitHubRepository
+    description: >-
+      Quadratic Unconstrained Binary Optimization solver library that
+      combines classical heuristics with quantum and quantum-inspired
+      approaches running on Pasqal neutral-atom hardware and emulators.
+  - aid: pasqal:maximum-independent-set
+    name: Maximum Independent Set Solver
+    tags:
+      - Optimization
+      - Graph Theory
+      - Library
+      - Open Source
+    humanURL: https://github.com/pasqal-io/maximum-independent-set
+    properties:
+      - url: https://github.com/pasqal-io/maximum-independent-set
+        type: GitHubRepository
+    description: >-
+      Maximum Independent Set (MIS) solver library that exploits the natural
+      mapping of MIS onto Rydberg-blockade dynamics of neutral-atom QPUs,
+      with quantum and classical baselines for benchmarking.
+  - aid: pasqal:qoolqit-sdk
+    name: QoolQit SDK
+    tags:
+      - Rydberg
+      - Analog Quantum
+      - Algorithm Development
+      - SDK
+      - Open Source
+    humanURL: https://github.com/pasqal-io/qoolqit
+    properties:
+      - url: https://github.com/pasqal-io/qoolqit
+        type: GitHubRepository
+    description: >-
+      QoolQit is Pasqal's Python package for simplified algorithm development
+      in the Rydberg Analog Model on neutral-atom hardware, providing a more
+      approachable layer above Pulser for analog quantum algorithm authors.
+  - aid: pasqal:emulators
+    name: Pasqal Emulators (EMU-MPS, EMU-SV)
+    tags:
+      - Emulator
+      - Simulation
+      - GPU
+      - PyTorch
+    humanURL: https://github.com/pasqal-io/emulators
+    properties:
+      - url: https://github.com/pasqal-io/emulators
+        type: GitHubRepository
+    description: >-
+      Pasqal's PyTorch-based GPU-accelerated emulator monorepo housing EMU-MPS
+      (matrix-product-state emulator for 60-100 qubits) and EMU-SV
+      (high-precision state-vector emulator) for simulating neutral-atom
+      device dynamics on classical hardware, accessible locally and as
+      Pasqal Cloud Services backends.
+common:
+  - type: Portal
+    url: https://www.pasqal.com
+  - type: Documentation
+    url: https://docs.pasqal.com
+  - type: GettingStarted
+    url: https://docs.pasqal.com/cloud/usage/
+  - type: SignUp
+    url: https://portal.pasqal.cloud/
+  - type: Console
+    url: https://portal.pasqal.cloud/
+  - type: Sandbox
+    name: Pulser Studio
+    url: https://studio.pasqal.cloud/
+  - type: APIReference
+    url: https://docs.pasqal.com/cloud/api/
+  - type: Authentication
+    url: https://docs.pasqal.com/cloud/usage/authentication/
+  - type: Pricing
+    url: https://www.pasqal.com/quantum-computing-as-a-service/
+  - type: Blog
+    url: https://www.pasqal.com/blog/
+  - type: Newsroom
+    url: https://www.pasqal.com/news/
+  - type: Careers
+    url: https://www.pasqal.com/careers/
+  - type: Contact
+    url: https://www.pasqal.com/contact-us/
+  - type: Forum
+    name: Pasqal Community
+    url: https://community.pasqal.com/
+  - type: GitHubOrganization
+    url: https://github.com/pasqal-io
+  - type: SDK
+    name: pasqal-cloud Python SDK
+    url: https://github.com/pasqal-io/pasqal-cloud
+  - type: SDK
+    name: Pulser SDK
+    url: https://github.com/pasqal-io/Pulser
+  - type: SDK
+    name: Qadence SDK
+    url: https://github.com/pasqal-io/qadence
+  - type: SDK
+    name: QoolQit SDK
+    url: https://github.com/pasqal-io/qoolqit
+  - type: SDK
+    name: pulser-azure (Azure Quantum provider)
+    url: https://github.com/pasqal-io/pulser-azure
+  - type: SDK
+    name: Pulser-myQLM (Atos QLM integration)
+    url: https://github.com/pasqal-io/Pulser-myQLM
+  - type: Tool
+    name: Pulser Studio
+    url: https://studio.pasqal.cloud/
+  - type: Tool
+    name: pyqtorch (PyTorch quantum simulator)
+    url: https://github.com/pasqal-io/pyqtorch
+  - type: Tool
+    name: horqrux (JAX quantum simulator)
+    url: https://github.com/pasqal-io/horqrux
+  - type: Library
+    name: Quantum Evolution Kernel (QEK)
+    url: https://github.com/pasqal-io/quantum-evolution-kernel
+  - type: Library
+    name: QUBO Solver
+    url: https://github.com/pasqal-io/qubo-solver
+  - type: Library
+    name: Maximum Independent Set Solver
+    url: https://github.com/pasqal-io/maximum-independent-set
+  - type: Library
+    name: Emulators (EMU-MPS / EMU-SV)
+    url: https://github.com/pasqal-io/emulators
+  - type: Integration
+    name: NVIDIA CUDA-Q
+    url: https://developer.nvidia.com/cuda-q
+  - type: Integration
+    name: Microsoft Azure Quantum
+    url: https://azure.microsoft.com/en-us/products/quantum
+  - type: Integration
+    name: Google Cloud Marketplace
+    url: https://cloud.google.com/
+  - type: Integration
+    name: OVHcloud Quantum Computing
+    url: https://www.ovhcloud.com/en/public-cloud/quantum-computing/
+  - type: Training
+    name: Quantum Quest
+    url: https://community.pasqal.com/quantum-quest
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/pasqal/
+  - type: Twitter
+    url: https://twitter.com/Pasqalio
+  - type: YouTube
+    url: https://www.youtube.com/@Pasqal
+  - type: Features
+    data:
+      - name: Fresnel QPU
+        description: Pasqal's commercial neutral-atom quantum processor based on arrays of laser-trapped Rydberg atoms, scaling toward 1000+ atoms.
+      - name: Dual analog and digital quantum computing
+        description: Single neutral-atom architecture supports both analog Hamiltonian simulation and digital gate-based programs.
+      - name: Pulser open-source SDK
+        description: Apache-2.0 Python library for composing, simulating, and executing pulse sequences on neutral-atom hardware.
+      - name: Pasqal Cloud Services REST API
+        description: REST API for batches, jobs, workloads, devices, projects, members, and billing with Auth0 authentication.
+      - name: pasqal-cloud Python SDK
+        description: Python SDK wrapping the Cloud Services REST API for submitting Pulser sequences to QPUs and emulators.
+      - name: Qadence digital-analog interface
+        description: Higher-level digital-analog programming interface with PyTorch (pyqtorch) and JAX (horqrux) backends.
+      - name: Pulser Studio no-code platform
+        description: Visual programming environment for designing neutral-atom quantum programs without writing code.
+      - name: EMU-MPS and EMU-SV emulators
+        description: GPU-accelerated emulators for 60-100 qubit neutral-atom dynamics simulation, available locally and on Pasqal Cloud.
+      - name: Quantum Evolution Kernel (QEK)
+        description: Open-source graph machine learning library using quantum-driven graph similarity metrics.
+      - name: QUBO and MIS application libraries
+        description: Open-source optimization libraries mapping QUBO and Maximum Independent Set problems onto Rydberg-blockade dynamics.
+      - name: Auth0 authentication
+        description: Cloud Services authentication via username/password, token-provider, or Auth0TokenProvider with refreshing token support.
+      - name: Credits-based billing
+        description: Credit Pools and Monthly Credit Consumption endpoints support a pay-as-you-go credits billing model on Pasqal Cloud Services.
+      - name: NVIDIA CUDA-Q integration
+        description: Hybrid quantum-HPC integration with NVIDIA CUDA-Q for accelerated quantum-classical workflows.
+      - name: Multi-cloud distribution
+        description: Pasqal QPUs and emulators distributed through Google Cloud, Microsoft Azure Quantum, OVHcloud, and AWS partners.
+      - name: On-premise deployment option
+        description: Commercial-grade neutral-atom quantum computers available for on-site deployment at customer facilities.
+      - name: Logical qubits demonstration
+        description: May 2026 industry-first demonstration of neutral-atom logical qubits outperforming physical qubits on differential equations.
+  - type: UseCases
+    data:
+      - name: Combinatorial optimization
+        description: QUBO and MIS-based optimization for logistics, smart charging, routing, and scheduling on neutral-atom hardware.
+      - name: Quantum machine learning
+        description: Graph kernels and variational quantum models for classification, regression, and generative tasks via QEK and Qadence.
+      - name: Quantum chemistry and materials
+        description: Analog Hamiltonian simulation of strongly correlated systems and materials discovery workloads.
+      - name: Drug discovery and molecular docking
+        description: Neutral-atom QPUs applied to molecular docking and protein design (e.g., partnership with True Nexus).
+      - name: Finance and risk modeling
+        description: Portfolio optimization and risk analytics on neutral-atom hardware via partner deployments.
+      - name: Smart charging and energy optimization
+        description: QAOA-tailored approaches for electric-vehicle smart-charging and grid optimization.
+      - name: Quantum-enhanced HPC
+        description: Hybrid quantum-classical workloads bridging Pasqal QPUs and supercomputing centers (CINECA, GENCI).
+      - name: Space mission optimization
+        description: QUBO-formulated space mission optimization (smo-qubo) on neutral-atom backends.
+  - type: Integrations
+    data:
+      - name: NVIDIA CUDA-Q
+        description: Pasqal-NVIDIA integration enabling hybrid quantum-HPC environments via CUDA-Q.
+      - name: Microsoft Azure Quantum
+        description: pulser-azure provider exposes Pasqal QPUs via Azure Quantum.
+      - name: Google Cloud Marketplace
+        description: Pasqal Cloud Services available through Google Cloud partnerships.
+      - name: AWS / IBM partnerships
+        description: Pasqal partners with IBM and is reachable via AWS distribution channels for enterprise quantum workloads.
+      - name: OVHcloud
+        description: Pulser-OVH tutorials and integration for European sovereign quantum cloud access.
+      - name: Atos / Eviden myQLM
+        description: Pulser-myQLM integration for the Atos/Eviden myQLM quantum programming framework.
+      - name: CINECA / GENCI / EuroHPC
+        description: Pasqal QPUs integrated into European supercomputing centers for hybrid HPC-quantum workloads.
+      - name: Aramco
+        description: Saudi Aramco partnership delivering the Middle East's first commercial quantum computing service platform.
+  - type: Solutions
+    data:
+      - name: Pasqal Cloud Services
+        description: Pay-as-you-go cloud access to Pasqal Fresnel QPUs and emulator backends via REST API and Python SDK.
+      - name: On-premise quantum computers
+        description: Commercial-grade neutral-atom quantum computers delivered for on-site customer deployment.
+      - name: Pulser Studio
+        description: No-code visual environment for authoring neutral-atom quantum programs.
+      - name: Quantum application libraries
+        description: Vertical solution libraries — QEK, QUBO-Solver, MIS, smo-qubo, Molecular-Docking — built on Pulser and Qadence.
+  - type: TermsOfService
+    url: https://www.pasqal.com/terms-of-use/
+  - type: PrivacyPolicy
+    url: https://www.pasqal.com/privacy-policy/
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
+    url: https://apievangelist.com
+    X: apievangelist
+created: '2026-05-24'
+modified: '2026-05-24'
+specificationVersion: '0.20'
