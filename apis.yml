@@ -64,7 +64,7 @@ apis:
       - url: https://portal.pasqal.cloud/
         type: Portal
       - url: https://github.com/pasqal-io/pasqal-cloud
-        type: SDK
+        type: SDKs
         name: pasqal-cloud Python SDK
       - url: https://docs.pasqal.com/cloud/usage/authentication/
         type: Authentication
@@ -212,7 +212,7 @@ common:
     url: https://docs.pasqal.com
   - type: GettingStarted
     url: https://docs.pasqal.com/cloud/usage/
-  - type: SignUp
+  - type: Signup
     url: https://portal.pasqal.cloud/
   - type: Console
     url: https://portal.pasqal.cloud/
@@ -233,36 +233,36 @@ common:
     url: https://www.pasqal.com/careers/
   - type: Contact
     url: https://www.pasqal.com/contact-us/
-  - type: Forum
+  - type: Forums
     name: Pasqal Community
     url: https://community.pasqal.com/
   - type: GitHubOrganization
     url: https://github.com/pasqal-io
-  - type: SDK
+  - type: SDKs
     name: pasqal-cloud Python SDK
     url: https://github.com/pasqal-io/pasqal-cloud
-  - type: SDK
+  - type: SDKs
     name: Pulser SDK
     url: https://github.com/pasqal-io/Pulser
-  - type: SDK
+  - type: SDKs
     name: Qadence SDK
     url: https://github.com/pasqal-io/qadence
-  - type: SDK
+  - type: SDKs
     name: QoolQit SDK
     url: https://github.com/pasqal-io/qoolqit
-  - type: SDK
+  - type: SDKs
     name: pulser-azure (Azure Quantum provider)
     url: https://github.com/pasqal-io/pulser-azure
-  - type: SDK
+  - type: SDKs
     name: Pulser-myQLM (Atos QLM integration)
     url: https://github.com/pasqal-io/Pulser-myQLM
-  - type: Tool
+  - type: Tools
     name: Pulser Studio
     url: https://studio.pasqal.cloud/
-  - type: Tool
+  - type: Tools
     name: pyqtorch (PyTorch quantum simulator)
     url: https://github.com/pasqal-io/pyqtorch
-  - type: Tool
+  - type: Tools
     name: horqrux (JAX quantum simulator)
     url: https://github.com/pasqal-io/horqrux
   - type: Library
@@ -277,16 +277,16 @@ common:
   - type: Library
     name: Emulators (EMU-MPS / EMU-SV)
     url: https://github.com/pasqal-io/emulators
-  - type: Integration
+  - type: Integrations
     name: NVIDIA CUDA-Q
     url: https://developer.nvidia.com/cuda-q
-  - type: Integration
+  - type: Integrations
     name: Microsoft Azure Quantum
     url: https://azure.microsoft.com/en-us/products/quantum
-  - type: Integration
+  - type: Integrations
     name: Google Cloud Marketplace
     url: https://cloud.google.com/
-  - type: Integration
+  - type: Integrations
     name: OVHcloud Quantum Computing
     url: https://www.ovhcloud.com/en/public-cloud/quantum-computing/
   - type: Training
