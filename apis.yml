@@ -206,6 +206,8 @@ apis:
       device dynamics on classical hardware, accessible locally and as
       Pasqal Cloud Services backends.
 common:
+  - type: DomainSecurity
+    url: security/pasqal-domain-security.yml
   - type: Portal
     url: https://www.pasqal.com
   - type: Documentation
