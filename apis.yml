@@ -62,6 +62,12 @@ apis:
     name: Pasqal Cloud Services API
     tags:
       - Batches
+      - Job
+      - Workloads
+      - Devices
+      - Quantum Computing
+    tags_raw:
+      - Batches
       - Jobs
       - Workloads
       - Devices
@@ -95,6 +101,12 @@ apis:
       - Analog Quantum
       - Neutral Atom
       - SDK
+      - Open-Source
+    tags_raw:
+      - Pulse-Level Control
+      - Analog Quantum
+      - Neutral Atom
+      - SDK
       - Open Source
     humanURL: https://pulser.readthedocs.io
     properties:
@@ -117,6 +129,12 @@ apis:
   - aid: pasqal:qadence-sdk
     name: Qadence SDK
     tags:
+      - Digital Analog
+      - Variational Algorithms
+      - Quantum Machine Learning
+      - SDK
+      - Open-Source
+    tags_raw:
       - Digital Analog
       - Variational Algorithms
       - Quantum Machine Learning
@@ -144,6 +162,11 @@ apis:
       - Graph Machine Learning
       - Quantum Machine Learning
       - Library
+      - Open-Source
+    tags_raw:
+      - Graph Machine Learning
+      - Quantum Machine Learning
+      - Library
       - Open Source
     humanURL: https://github.com/pasqal-io/quantum-evolution-kernel
     properties:
@@ -156,6 +179,11 @@ apis:
   - aid: pasqal:qubo-solver
     name: QUBO Solver
     tags:
+      - Optimization
+      - QUBO
+      - Library
+      - Open-Source
+    tags_raw:
       - Optimization
       - QUBO
       - Library
@@ -174,6 +202,11 @@ apis:
       - Optimization
       - Graph Theory
       - Library
+      - Open-Source
+    tags_raw:
+      - Optimization
+      - Graph Theory
+      - Library
       - Open Source
     humanURL: https://github.com/pasqal-io/maximum-independent-set
     properties:
@@ -186,6 +219,12 @@ apis:
   - aid: pasqal:qoolqit-sdk
     name: QoolQit SDK
     tags:
+      - Rydberg
+      - Analog Quantum
+      - Algorithm Development
+      - SDK
+      - Open-Source
+    tags_raw:
       - Rydberg
       - Analog Quantum
       - Algorithm Development
