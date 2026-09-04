@@ -26,7 +26,7 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pasqal.png
 type: Provider
-position: Provider
+position: Producing
 access: 3rd-Party
 kind: contract
 tags:
