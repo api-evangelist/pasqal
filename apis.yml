@@ -2,16 +2,23 @@ aid: pasqal
 name: Pasqal
 url: https://raw.githubusercontent.com/api-evangelist/pasqal/refs/heads/main/apis.yml
 deliveryModel:
-  model: unknown
+  model: saas
+  license_evidence:
+    not_product:
+    - pasqal-io/emulators
+    - pasqal-io/maximum-independent-set
+    - pasqal-io/pulser
+    - pasqal-io/qadence
+    - pasqal-io/qoolqit
   open_source: unknown
   commercial: true
   callable_host: false
-  label: Delivery model not determined — needs a product licence on record
+  label: Hosted service · you call their endpoint
   confidence: low
   source:
   - pricing
-  - repository-unlicensed
-  generated: '2026-08-28'
+  - repository-not-product
+  generated: '2026-09-25'
   method: derived
 accessModel:
   pricing: unknown
@@ -102,13 +109,14 @@ apis:
   - Analog Quantum
   - Neutral Atom
   - SDK
-  - Open-Source
+  - Open Source
   tags_raw:
   - Pulse-Level Control
   - Analog Quantum
   - Neutral Atom
   - SDK
   - Open Source
+  - Open-Source
   humanURL: https://pulser.readthedocs.io
   properties:
   - url: https://pulser.readthedocs.io
@@ -131,13 +139,14 @@ apis:
   - Variational Algorithms
   - Quantum Machine Learning
   - SDK
-  - Open-Source
+  - Open Source
   tags_raw:
   - Digital Analog
   - Variational Algorithms
   - Quantum Machine Learning
   - SDK
   - Open Source
+  - Open-Source
   humanURL: https://pasqal-io.github.io/qadence/
   properties:
   - url: https://pasqal-io.github.io/qadence/
@@ -157,12 +166,13 @@ apis:
   - Graph Machine Learning
   - Quantum Machine Learning
   - Library
-  - Open-Source
+  - Open Source
   tags_raw:
   - Graph Machine Learning
   - Quantum Machine Learning
   - Library
   - Open Source
+  - Open-Source
   humanURL: https://github.com/pasqal-io/quantum-evolution-kernel
   properties:
   - url: https://github.com/pasqal-io/quantum-evolution-kernel
@@ -176,12 +186,13 @@ apis:
   - Optimization
   - QUBO
   - Library
-  - Open-Source
+  - Open Source
   tags_raw:
   - Optimization
   - QUBO
   - Library
   - Open Source
+  - Open-Source
   humanURL: https://github.com/pasqal-io/qubo-solver
   properties:
   - url: https://github.com/pasqal-io/qubo-solver
@@ -194,12 +205,13 @@ apis:
   - Optimization
   - Graph Theory
   - Library
-  - Open-Source
+  - Open Source
   tags_raw:
   - Optimization
   - Graph Theory
   - Library
   - Open Source
+  - Open-Source
   humanURL: https://github.com/pasqal-io/maximum-independent-set
   properties:
   - url: https://github.com/pasqal-io/maximum-independent-set
@@ -213,13 +225,14 @@ apis:
   - Analog Quantum
   - Algorithm Development
   - SDK
-  - Open-Source
+  - Open Source
   tags_raw:
   - Rydberg
   - Analog Quantum
   - Algorithm Development
   - SDK
   - Open Source
+  - Open-Source
   humanURL: https://github.com/pasqal-io/qoolqit
   properties:
   - url: https://github.com/pasqal-io/qoolqit
