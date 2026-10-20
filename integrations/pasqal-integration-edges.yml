@@ -1,0 +1,36 @@
+edges:
+- partner_name: Azure Quantum (Microsoft)
+  partner: microsoft-quantum
+  partner_match: aggregator
+  type: marketplace
+  marketplace: microsoft-quantum
+  channel: distribution
+  relationship: distribution-channel
+  direction: third-party
+  evidence: https://learn.microsoft.com/en-us/azure/quantum/provider-pasqal
+  seller_name: Pasqal
+  devices:
+  - Pasqal EMU_SV
+  - Pasqal EMU_MPS
+  - Pasqal EMU_FREE
+  - Pasqal FRESNEL
+  - Pasqal FRESNEL_CAN1
+  contract_reference:
+    register: Azure Quantum providers (learn.microsoft.com azure/quantum qc-target-list + provider pages)
+    spec_file: null
+    role: quantum-cloud-distribution
+    registered_name: Pasqal
+    matched_domain: pasqal.com
+    matched_by: domain
+    domain_source: azure provider page own-site link
+    signal_note: selling QPU access through a quantum cloud is distribution, kept out of position shares
+    detected_by: sweep-quantum-computing.py
+    detected: '2026-10-20'
+  detected_by: sweep-quantum-computing.py
+  detected: '2026-10-20'
+generated: '2026-10-20'
+method: searched
+source:
+- https://learn.microsoft.com/en-us/azure/quantum/qc-target-list
+checked:
+- https://learn.microsoft.com/en-us/azure/quantum/qc-target-list
