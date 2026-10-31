@@ -1,4 +1,4 @@
-# Pasqal (pasqal)
+# Pasqal
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,139 +64,98 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Pasqal is a French neutral-atom quantum computing company headquartered in Palaiseau, France and co-founded in 2019 by 2022 Physics Nobel Laureate Alain Aspect. Pasqal builds commercial-grade neutral-atom quantum processors (the Fresnel QPU family) that use arrays of laser-trapped Rydberg atoms to run both analog and digital quantum programs, and packages them as on-premise systems and as Pasqal Cloud Services — a pay-as-you-go quantum computing platform also distributed through Google Cloud, Microsoft Azure Quantum, OVHcloud, and AWS partners. The developer surface is anchored by the open-source Pulser SDK, the pasqal-cloud Python SDK, and the Pasqal Cloud Services REST API.
+Pasqal is a French neutral-atom quantum computing company headquartered in Palaiseau, France and co-founded in 2019 by 2022 Physics Nobel Laureate Alain Aspect. Pasqal builds commercial-grade neutral-atom quantum processors (the Fresnel QPU family) that use arrays of laser-trapped Rydberg atoms to run both analog and digital quantum programs, and packages them as on-premise systems and as Pasqal Cloud Services — a pay-as-you-go quantum computing platform also distributed through Google Cloud, Microsoft Azure Quantum, OVHcloud, and AWS partners. The developer surface is anchored by Pulser, the open-source (Apache-2.0) Python library for pulse-level/analog programming of neutral-atom devices, the pasqal-cloud Python SDK for submitting Pulser sequences and workloads to QPUs and emulators, and the Pasqal Cloud Services REST API (with Auth0-based authentication and v1/v2 endpoints for batches, jobs, devices, workloads, projects, members, billing, and OVH integrations). The broader ecosystem includes Qadence (digital-analog programming), Pulser Studio (no-code visual programming), the EMU-MPS and EMU-SV GPU-accelerated emulators, and quantum application libraries — QEK (Quantum Evolution Kernel for graph ML), QUBO-Solver, Maximum-Independent-Set, and QoolQit (Rydberg analog algorithm development). Pasqal serves 35+ commercial engagements across energy, finance, logistics, automotive, and pharma — including BMW, Thales, Capgemini, Sumitomo, Aramco, CMA CGM, and KAIST — and partners with NVIDIA (CUDA-Q), IBM, Google, and Microsoft. In May 2026 Pasqal demonstrated logical qubits outperforming physical qubits on differential equations, and in March 2026 announced 340M+ euros of new financing ahead of going public via business combination with Bleichroeder Acquisition Corp II.
 
-**URL:** [Visit APIs.json](https://raw.githubusercontent.com/api-evangelist/pasqal/refs/heads/main/apis.yml)
+**Areas:** Quantum Computing · Neutral Atom · Quantum · QPU · Rydberg · Pulse-Level Control · Analog Quantum · Digital Quantum · HPC · Optimization · Quantum Machine Learning · Quantum Simulation
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## Pasqal on APIs.io
 
-## Tags
+Everything profiled for Pasqal is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/pasqal/](https://apis.io/providers/pasqal/)** — or go straight to one of the APIs or properties below.
 
-Quantum Computing, Neutral Atom, Quantum, QPU, Rydberg, Pulse-Level Control, Analog Quantum, Digital Quantum, HPC, Optimization, Quantum Machine Learning, Quantum Simulation, France
+### APIs (8)
 
-## Timestamps
+- [Pasqal Cloud Services API](https://apis.io/apis/pasqal/pasqal-cloud-services-api/) — REST API for Pasqal Cloud Services — submit and manage quantum Batches and Jobs on Pasqal Fresnel QPUs and on emulator backends (EMU-FREE, EMU-TN, EMU-MPS,…
+- [Pulser SDK](https://apis.io/apis/pasqal/pulser-sdk/) — Pulser is Pasqal's open-source (Apache-2.0) Python framework for composing, simulating, and executing pulse sequences on neutral-atom quantum devices. It…
+- [Qadence SDK](https://apis.io/apis/pasqal/qadence-sdk/) — Qadence is Pasqal's higher-level digital-analog quantum programming interface for writing variational quantum programs with tunable qubit interactions,…
+- [Quantum Evolution Kernel (QEK)](https://apis.io/apis/pasqal/quantum-evolution-kernel/) — QEK is Pasqal's open-source graph machine learning library that uses quantum-driven similarity metrics derived from neutral-atom dynamics to build graph…
+- [QUBO Solver](https://apis.io/apis/pasqal/qubo-solver/) — Quadratic Unconstrained Binary Optimization solver library that combines classical heuristics with quantum and quantum-inspired approaches running on Pasqal…
+- [Maximum Independent Set Solver](https://apis.io/apis/pasqal/maximum-independent-set/) — Maximum Independent Set (MIS) solver library that exploits the natural mapping of MIS onto Rydberg-blockade dynamics of neutral-atom QPUs, with quantum and…
+- [QoolQit SDK](https://apis.io/apis/pasqal/qoolqit-sdk/) — QoolQit is Pasqal's Python package for simplified algorithm development in the Rydberg Analog Model on neutral-atom hardware, providing a more approachable…
+- [Pasqal Emulators (EMU-MPS, EMU-SV)](https://apis.io/apis/pasqal/emulators/) — Pasqal's PyTorch-based GPU-accelerated emulator monorepo housing EMU-MPS (matrix-product-state emulator for 60-100 qubits) and EMU-SV (high-precision…
 
-- **Created:** 2026-05-24
-- **Modified:** 2026-05-24
+### Published properties
 
-## APIs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### Pasqal Cloud Services API
-REST API for Pasqal Cloud Services — submit and manage quantum Batches and Jobs on Pasqal Fresnel QPUs and on emulator backends (EMU-FREE, EMU-TN, EMU-MPS, EMU-SV), query Devices and Device Specifications, run custom Workloads, and manage Projects, Members, Contracts, Credit Pools, and Monthly Credit Consumption. Endpoints are organized under `/api/v1` and `/api/v2`. Authentication is Auth0-based.
+#### Security (1)
 
-**Human URL:** [https://docs.pasqal.com/cloud/](https://docs.pasqal.com/cloud/)
+Authentication, trust centre, and vulnerability disclosure.
 
-- [Documentation](https://docs.pasqal.com/cloud/)
-- [API Reference](https://docs.pasqal.com/cloud/api/)
-- [Portal](https://portal.pasqal.cloud/)
-- [pasqal-cloud Python SDK](https://github.com/pasqal-io/pasqal-cloud)
-- [Authentication](https://docs.pasqal.com/cloud/usage/authentication/)
+- [Pasqal Domain Security](https://apis.io/security/pasqal/pasqal-domain-security/)
 
-### Pulser SDK
-Apache-2.0 open-source Python framework for composing, simulating, and executing pulse sequences on neutral-atom quantum devices. Supports digital quantum computing and analog quantum simulation; ships with `pulser_simulation` (QuTiP-based emulation); integrates with `pasqal-cloud` via `pulser-pasqal`. Current release v1.8.0 (May 2026).
+## Where to find this API
 
-**Human URL:** [https://pulser.readthedocs.io](https://pulser.readthedocs.io)
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-- [Documentation](https://pulser.readthedocs.io)
-- [GitHub Repository](https://github.com/pasqal-io/Pulser)
-- [PyPI](https://pypi.org/project/pulser/)
-
-### Qadence SDK
-Higher-level digital-analog quantum programming interface for writing variational quantum programs with tunable qubit interactions on neutral-atom hardware. Ecosystem includes qadence-libs, qadence-protocols, qadence2-core/-ir/-expressions/-platforms, pyqtorch (PyTorch state-vector simulator), and horqrux (JAX simulator).
-
-**Human URL:** [https://pasqal-io.github.io/qadence/](https://pasqal-io.github.io/qadence/)
-
-- [GitHub Repository](https://github.com/pasqal-io/qadence)
-- [PyPI](https://pypi.org/project/qadence/)
-
-### Quantum Evolution Kernel (QEK)
-Open-source graph machine learning library that uses quantum-driven similarity metrics derived from neutral-atom dynamics to build graph kernels for classification and regression.
-
-- [GitHub Repository](https://github.com/pasqal-io/quantum-evolution-kernel)
-
-### QUBO Solver
-Quadratic Unconstrained Binary Optimization solver library combining classical heuristics with quantum and quantum-inspired approaches on Pasqal neutral-atom hardware.
-
-- [GitHub Repository](https://github.com/pasqal-io/qubo-solver)
-
-### Maximum Independent Set Solver
-MIS solver library exploiting the natural mapping of MIS onto Rydberg-blockade dynamics of neutral-atom QPUs.
-
-- [GitHub Repository](https://github.com/pasqal-io/maximum-independent-set)
-
-### QoolQit SDK
-Python package for simplified algorithm development in the Rydberg Analog Model on neutral-atom hardware — a more approachable layer above Pulser for analog quantum algorithm authors.
-
-- [GitHub Repository](https://github.com/pasqal-io/qoolqit)
-
-### Pasqal Emulators (EMU-MPS, EMU-SV)
-PyTorch-based GPU-accelerated emulator monorepo housing EMU-MPS (matrix-product-state, 60-100 qubits) and EMU-SV (high-precision state-vector). Available locally and as Pasqal Cloud Services backends.
-
-- [GitHub Repository](https://github.com/pasqal-io/emulators)
-
-## Features
-
-- Fresnel QPU — Pasqal's commercial neutral-atom quantum processor based on arrays of laser-trapped Rydberg atoms, scaling toward 1000+ atoms
-- Dual analog and digital quantum computing on a single neutral-atom architecture
-- Pulser open-source SDK (Apache-2.0) for pulse-level / analog programming
-- Pasqal Cloud Services REST API for batches, jobs, workloads, devices, projects, members, billing
-- pasqal-cloud Python SDK wrapping the Cloud Services REST API
-- Qadence digital-analog programming interface with PyTorch (pyqtorch) and JAX (horqrux) backends
-- Pulser Studio no-code visual programming environment
-- EMU-MPS and EMU-SV GPU-accelerated emulators (60-100 qubits)
-- Quantum Evolution Kernel (QEK) graph machine learning library
-- QUBO and Maximum Independent Set application libraries mapped to Rydberg-blockade dynamics
-- Auth0 authentication with username/password, token-provider, and Auth0TokenProvider flows
-- Credits-based pay-as-you-go billing via Credit Pools and Monthly Credit Consumption endpoints
-- NVIDIA CUDA-Q integration for hybrid quantum-HPC workflows
-- Multi-cloud distribution through Google Cloud, Microsoft Azure Quantum, OVHcloud, and AWS partners
-- On-premise deployment of commercial-grade neutral-atom quantum computers
-- May 2026 industry-first demonstration of neutral-atom logical qubits outperforming physical qubits
-
-## Use Cases
-
-- Combinatorial optimization (QUBO, MIS) for logistics, smart charging, routing, scheduling
-- Quantum machine learning via graph kernels (QEK) and variational models (Qadence)
-- Quantum chemistry and materials simulation via analog Hamiltonian methods
-- Drug discovery and molecular docking (partnership with True Nexus)
-- Finance and risk modeling
-- Smart charging and energy-grid optimization
-- Hybrid quantum-HPC workloads with CINECA, GENCI, EuroHPC centers
-- Space mission optimization (smo-qubo)
-
-## Integrations
-
-NVIDIA CUDA-Q, Microsoft Azure Quantum (pulser-azure), Google Cloud Marketplace, AWS partners, IBM partnership, OVHcloud, Atos/Eviden myQLM (Pulser-myQLM), CINECA / GENCI / EuroHPC supercomputing centers, Saudi Aramco MENA platform.
-
-## Solutions
-
-- Pasqal Cloud Services — pay-as-you-go cloud access to Fresnel QPUs and emulators
-- On-premise neutral-atom quantum computers for customer facilities
-- Pulser Studio — no-code visual programming environment
-- Quantum application libraries — QEK, QUBO-Solver, MIS, smo-qubo, Molecular-Docking
-
-## Common
-
-- [Portal](https://www.pasqal.com)
+- [Website](https://pasqal.com)
 - [Documentation](https://docs.pasqal.com)
-- [Getting Started](https://docs.pasqal.com/cloud/usage/)
-- [Sign Up / Console](https://portal.pasqal.cloud/)
-- [Pulser Studio (Sandbox)](https://studio.pasqal.cloud/)
-- [API Reference](https://docs.pasqal.com/cloud/api/)
-- [Authentication](https://docs.pasqal.com/cloud/usage/authentication/)
-- [Pricing — Quantum Computing as a Service](https://www.pasqal.com/quantum-computing-as-a-service/)
+- [Getting started](https://docs.pasqal.com/cloud/usage/)
+- [API reference](https://docs.pasqal.com/cloud/api/)
+- [Pricing](https://www.pasqal.com/quantum-computing-as-a-service/)
 - [Blog](https://www.pasqal.com/blog/)
-- [News](https://www.pasqal.com/news/)
-- [Careers](https://www.pasqal.com/careers/)
-- [Contact](https://www.pasqal.com/contact-us/)
-- [Pasqal Community (Forum)](https://community.pasqal.com/)
-- [GitHub Organization](https://github.com/pasqal-io)
-- [LinkedIn](https://www.linkedin.com/company/pasqal/)
-- [Twitter](https://twitter.com/Pasqalio)
-- [YouTube](https://www.youtube.com/@Pasqal)
-- [Terms of Service](https://www.pasqal.com/terms-of-use/)
-- [Privacy Policy](https://www.pasqal.com/privacy-policy/)
+- [Terms of service](https://www.pasqal.com/terms-of-use/)
+- [Privacy policy](https://www.pasqal.com/privacy-policy/)
+- [GitHub](https://github.com/pasqal-io)
 
-## Maintainers
+## API Evangelist rating
 
-- **Kin Lane** — [API Evangelist](https://apievangelist.com) — kin@apievangelist.com — [@apievangelist](https://twitter.com/apievangelist)
+**Kin Score 18.8** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 63.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 50.0 |
+| Access clarity | 13.2 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/pasqal/](https://apis.io/providers/pasqal/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Pasqal: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/pasqal/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
